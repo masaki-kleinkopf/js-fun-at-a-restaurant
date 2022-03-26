@@ -43,7 +43,7 @@ function removeMenuItem(restaurant, item, type){
   }
 };
 
-//I'm sure this is not the best way to write this, but only way to make it work.
+//This code passes but seems like it wouldn't work if the arrays had multiple items.
 //Will try to refactor and rethink
 
 

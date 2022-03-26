@@ -25,7 +25,7 @@ function formatPrice(originalPrice){
 function decreasePrice(price){
   return price - (price * .1)
 
-}
+};
 
 function createRecipe(title, ingredients, type){
   var recipeObj = {};
@@ -33,7 +33,7 @@ function createRecipe(title, ingredients, type){
   recipeObj.ingredients = ingredients;
   recipeObj.type = type;
   return recipeObj;
-}
+};
 
 
 module.exports = {
