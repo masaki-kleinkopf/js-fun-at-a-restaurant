@@ -10,7 +10,7 @@ function refundOrder(orderNum, orderList){
     if (orderNum === orderList[i].orderNumber){
       orderList.splice(i,1);
       }
-  }
+   }
 }
 
 function listItems(orders){
