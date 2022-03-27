@@ -1,3 +1,4 @@
+//Will need to refactor with bracket notation in checkForFood.
 class Chef {
   constructor(name,restaurant) {
     this.name = name;

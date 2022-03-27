@@ -18,7 +18,23 @@ function addMenuItem(restaurant, item){
 };
 
 
+//Just learned bracket notation to make this way simpler.
+
 function removeMenuItem(restaurant, item, type){
+
+
+  for (var i = 0; i<restaurant.menus[type].length; i++){
+    if (restaurant.menus[type][i].name === item){
+      restaurant.menus[type].splice(i, 1)
+      return `No one is eating our ${item} - it has been removed from the ${type} menu!`
+    }
+  }
+  return `Sorry, we don't sell ${item}, try adding a new recipe!`
+};
+
+// My initial attempt without bracket notation.
+
+function removeMenuItem1(restaurant, item, type){
   var breakfast = restaurant.menus.breakfast;
   var lunch = restaurant.menus.lunch;
   var dinner = restaurant.menus.dinner;
@@ -42,10 +58,6 @@ function removeMenuItem(restaurant, item, type){
     return `Sorry, we don't sell ${item}, try adding a new recipe!`
   }
 };
-
-//This code passes but seems like it wouldn't work if the arrays had multiple items.
-//Will try to refactor and rethink
-
 
 
 module.exports = {
